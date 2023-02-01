@@ -28,6 +28,10 @@ public class Product {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	public static void acceptUpdate(Product p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
 
 	@Override
 	public String toString() {
